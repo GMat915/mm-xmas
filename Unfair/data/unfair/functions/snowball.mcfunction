@@ -25,3 +25,5 @@ execute store result entity @e[type=sheep,tag=projectile,limit=1] Motion[2] doub
 # clean up, ready for the next player
 tag @e[tag=projectile] remove projectile
 kill @e[tag=direction]
+
+say Works!
