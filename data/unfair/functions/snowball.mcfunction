@@ -18,9 +18,9 @@ scoreboard players operation #targetZ pos -= #playerZ pos
 summon snowball ~ ~ ~ {Tags:["projectile"],NoGravity:1}
 
 # apply motion to projectile
-execute store result entity @e[type=sheep,tag=projectile,limit=1] Motion[0] double 0.001 run scoreboard players get #targetX pos
-execute store result entity @e[type=sheep,tag=projectile,limit=1] Motion[1] double 0.001 run scoreboard players get #targetY pos
-execute store result entity @e[type=sheep,tag=projectile,limit=1] Motion[2] double 0.001 run scoreboard players get #targetZ pos
+execute store result entity @e[type=snowman,tag=projectile,limit=1] Motion[0] double 0.001 run scoreboard players get #targetX pos
+execute store result entity @e[type=snowman,tag=projectile,limit=1] Motion[1] double 0.001 run scoreboard players get #targetY pos
+execute store result entity @e[type=snowman,tag=projectile,limit=1] Motion[2] double 0.001 run scoreboard players get #targetZ pos
 
 # clean up, ready for the next player
 tag @e[tag=projectile] remove projectile
