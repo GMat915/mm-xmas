@@ -15,7 +15,7 @@ scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the projectile entity
-summon sheep ~ ~ ~ {Tags:["projectile"]}
+summon snowball ~ ~ ~ {Tags:["projectile"],NoGravity:1}
 
 # apply motion to projectile
 execute store result entity @e[type=sheep,tag=projectile,limit=1] Motion[0] double 0.001 run scoreboard players get #targetX pos
