@@ -16,6 +16,7 @@ scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the projectile entity
 summon snowball ~ ~ ~ {Tags:["projectile"],NoGravity:1}
+execute as @e[tag=projectile] run team join unf
 
 # apply motion to projectile
 execute store result entity @e[type=snowball,tag=projectile,limit=1] Motion[0] double 0.001 run scoreboard players get #targetX pos
