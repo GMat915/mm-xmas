@@ -15,7 +15,7 @@ scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 
 # summon the projectile entity
-summon snowball ~ ~1 ~ {Tags:["projectile"],NoGravity:1}
+summon snowball ^ ^ ^1 {Tags:["projectile"],NoGravity:1}
 execute as @e[tag=projectile] run team join uniwl_noHitbox
 
 # apply motion to projectile
