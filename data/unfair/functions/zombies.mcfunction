@@ -1,2 +1,2 @@
 summon zombie ~1 ~3 ~
-schedule function unfair:zombies 1.5s append
+execute in minecraft:unfair run schedule function unfair:zombies 1.5s append
