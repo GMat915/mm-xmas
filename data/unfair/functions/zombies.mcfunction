@@ -1,2 +1,2 @@
-summon zombie ~ ~ ~
-schedule function unfair:zombie 1.5s append
+summon zombie ~1 ~3 ~
+schedule function unfair:zombies 1.5s append
