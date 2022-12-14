@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "location": {
+      "position": {
+        "x": 12,
+        "y": 64,
+        "z": -12
+      },
+      "block": {
+        "blocks": [
+          "minecraft:snow_block"
+        ]
+      }
+    }
+  }
+}
