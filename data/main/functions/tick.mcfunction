@@ -4,3 +4,7 @@ execute in minecraft:unfair if block 2 69 -17 minecraft:polished_blackstone_butt
 execute store result entity @e[tag=loading,limit=1] ItemRotation int 1 run scoreboard players get global_dummy loading
 scoreboard players add global_dummy loading 1
 execute as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences
+
+scoreboard players enable @a reset
+execute if entity @a[limit=1,scores={kill=1..}] run function spleef:reset
+scoreboard players reset @a[scores={kill=1..}] reset
