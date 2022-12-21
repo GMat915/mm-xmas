@@ -6,5 +6,5 @@ scoreboard players add global_dummy loading 1
 execute as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences
 
 scoreboard players enable @a reset
-execute if entity @a[limit=1,scores={reset=1..}] run function spleef:reset
+execute if entity @a[scores={reset=1..}] run function spleef:reset
 scoreboard players reset @a[scores={reset=1..}] reset
