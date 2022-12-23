@@ -7,8 +7,6 @@ execute in minecraft:unfair3 if block -4 65 -18 minecraft:polished_blackstone_bu
 execute in minecraft:unfair3 if block 2 69 -17 minecraft:polished_blackstone_button[powered=true] run function unfair:blocks
 execute in minecraft:unfair4 if block -4 65 -18 minecraft:polished_blackstone_button[powered=true] run function unfair:del-blocks
 execute in minecraft:unfair4 if block 2 69 -17 minecraft:polished_blackstone_button[powered=true] run function unfair:blocks
-execute store result entity @e[tag=loading] ItemRotation int 1 run scoreboard players get global_dummy loading
-scoreboard players add global_dummy loading 1
 execute in minecraft:unfair as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences1
 execute in minecraft:unfair2 as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences1
 execute in minecraft:unfair3 as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences1
