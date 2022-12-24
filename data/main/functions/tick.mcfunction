@@ -14,7 +14,7 @@ execute in minecraft:unfair4 as @a[tag=unf,nbt={Dimension:"minecraft:unfair4"}] 
 
 scoreboard players enable @a reset
 execute if entity @a[scores={reset=1..},tag=splf] in minecraft:spleef run function spleef:reset
-scoreboard players reset @a[scores={reset=1..},tag=splf] reset
+scoreboard players reset @a[scores={reset=1..}] reset
 
 execute if score #global_dummy spleef_end matches 1 store result score #global_dummy spleef_playercount if entity @a[tag=splf]
 execute if score #global_dummy spleef_playercount matches 0 run function spleef:end
