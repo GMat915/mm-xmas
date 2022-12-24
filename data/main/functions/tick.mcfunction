@@ -7,10 +7,10 @@ execute in minecraft:unfair3 if block -4 65 -18 minecraft:polished_blackstone_bu
 execute in minecraft:unfair3 if block 2 69 -17 minecraft:polished_blackstone_button[powered=true] run function unfair:blocks
 execute in minecraft:unfair4 if block -4 65 -18 minecraft:polished_blackstone_button[powered=true] run function unfair:del-blocks
 execute in minecraft:unfair4 if block 2 69 -17 minecraft:polished_blackstone_button[powered=true] run function unfair:blocks
-execute in minecraft:unfair as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences1
-execute in minecraft:unfair2 as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences2
-execute in minecraft:unfair3 as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences3
-execute in minecraft:unfair4 as @a[tag=unf] if score @s drop matches 0.. run function unfair:fences4
+execute in minecraft:unfair as @a[tag=unf,nbt={Dimension:"minecraft:unfair"}] if score @s drop matches 0.. run function unfair:fences1
+execute in minecraft:unfair2 as @a[tag=unf,nbt={Dimension:"minecraft:unfair2"}] if score @s drop matches 0.. run function unfair:fences2
+execute in minecraft:unfair3 as @a[tag=unf,nbt={Dimension:"minecraft:unfair3"}] if score @s drop matches 0.. run function unfair:fences3
+execute in minecraft:unfair4 as @a[tag=unf,nbt={Dimension:"minecraft:unfair4"}] if score @s drop matches 0.. run function unfair:fences4
 
 scoreboard players enable @a reset
 execute if entity @a[scores={reset=1..}] in minecraft:spleef run function spleef:reset
