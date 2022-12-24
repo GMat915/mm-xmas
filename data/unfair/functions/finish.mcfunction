@@ -4,7 +4,6 @@ execute in minecraft:unfair run data merge entity @e[type=armor_stand,tag=grabbe
 execute in minecraft:unfair2 run data merge entity @e[type=armor_stand,tag=grabber2,limit=1] {HandItems:[{},{}]}
 execute in minecraft:unfair3 run data merge entity @e[type=armor_stand,tag=grabber3,limit=1] {HandItems:[{},{}]}
 execute in minecraft:unfair4 run data merge entity @e[type=armor_stand,tag=grabber4,limit=1] {HandItems:[{},{}]}
-train ticket give Finish @p
 execute in minecraft:unfair run function unfair:reset
 execute in minecraft:unfair2 run function unfair:reset
 execute in minecraft:unfair3 run function unfair:reset
