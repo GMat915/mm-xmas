@@ -6,3 +6,4 @@ fill -10 77 -10 10 77 10 snow_block
 fill -10 72 -10 10 72 10 snow_block
 fill -10 67 -10 10 67 10 snow_block
 scoreboard players set global_dummy splf_run 0
+scoreboard players reset @a splf_death 
